@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            animation: blink 1.5s infinite alternate;
+        }
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+            background-color: blueviolet;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+
+
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        #form-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Sosialisasi</h1>
+    <div id="form-container"></div>
+    <div id="result-container">
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td id="result-name"></td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td id="result-nim"></td>
+            </tr>
+            <tr>
+                <th>Kelas</th>
+                <td id="result-class"></td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td id="result-address"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
