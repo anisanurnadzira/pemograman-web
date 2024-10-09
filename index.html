@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Penjelasan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* hijau pastel */
+            color: #2e7d32; /* hijau gelap */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            background-color: #a5d6a7; /* hijau pastel lebih gelap */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            background-color: #c8e6c9; /* hijau pastel lebih terang */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #81c784; /* hijau pastel */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #66bb6a; /* hijau pastel lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Algoritma SVM</h1>
+    <p>Support Vector Machine (SVM) adalah algoritma pembelajaran mesin yang sangat efektif digunakan untuk tugas klasifikasi dan regresi. Inti dari SVM adalah menemukan hyperplane terbaik yang memisahkan data ke dalam kelas-kelas yang berbeda dengan margin yang maksimal. Dalam konteks klasifikasi, SVM bekerja dengan memetakan data ke dalam ruang dimensi yang lebih tinggi jika perlu, di mana hyperplane dapat digunakan untuk memisahkan kelas-kelas tersebut. Algoritma ini mencari hyperplane yang memaksimalkan jarak terdekat antara titik data dari masing-masing kelas ke hyperplane, yang dikenal sebagai margin. Titik data yang berada di batas margin ini disebut support vectors, dan mereka memainkan peran kunci dalam menentukan posisi hyperplane.
+
+        Untuk kasus data yang tidak dapat dipisahkan secara linear, SVM menggunakan teknik yang disebut kernel trick. Fungsi kernel ini memetakan data ke dalam ruang dimensi yang lebih tinggi sehingga data menjadi lebih mudah dipisahkan oleh hyperplane. Beberapa kernel yang umum digunakan termasuk linear, polynomial, dan radial basis function (RBF). Dalam proses pelatihannya, SVM menggunakan metode optimasi matematika untuk menemukan hyperplane yang optimal yang memaksimalkan margin dan meminimalkan kesalahan klasifikasi. 
+        
+        Dengan kemampuannya untuk bekerja dengan data linear dan non-linear serta menjaga margin yang maksimal, SVM menjadi algoritma yang kuat dan serbaguna untuk berbagai jenis tugas klasifikasi dan regresi.</p>
+    <h1>2. Algoritma RF</h1>
+    <p>Random Forest (RF) adalah algoritma pembelajaran mesin berbasis ensemble yang dirancang untuk meningkatkan akurasi dan stabilitas prediksi dalam tugas klasifikasi dan regresi. Algoritma ini bekerja dengan membangun banyak pohon keputusan (decision trees) selama proses pelatihan. Langkah pertama dalam Random Forest adalah menggunakan teknik bootstrap sampling, di mana beberapa subset dari dataset asli diambil secara acak dengan penggantian. Setiap subset ini digunakan untuk membentuk pohon keputusan individual.
+
+        Setiap pohon dalam hutan dibangun dari subset fitur acak yang dipilih pada setiap node, yang membantu mengurangi korelasi antara pohon-pohon dan meningkatkan keragaman model. Setelah semua pohon keputusan terbentuk, Random Forest menggabungkan hasil dari semua pohon untuk membuat prediksi akhir. Dalam masalah klasifikasi, hasil dari setiap pohon dipilih melalui voting mayoritas, sedangkan untuk regresi, hasilnya diambil rata-rata dari semua pohon.
+        
+        Keunggulan utama dari Random Forest adalah kemampuannya untuk mengurangi risiko overfitting dibandingkan dengan pohon keputusan tunggal, karena menggabungkan banyak pohon yang tidak berkorelasi. Selain itu, algoritma ini cukup robust terhadap data yang hilang dan mampu menangani dataset yang besar dengan efisien. Random Forest juga menyediakan metrik pentingnya fitur, yang dapat digunakan untuk memilih fitur yang paling relevan dalam model, membantu dalam proses feature selection. Dengan keunggulan-keunggulan ini, Random Forest menjadi algoritma yang kuat dan serbaguna.</p>
+    <a href="tes.html">Hasil supervised clasification</a>
+</body>
+</html>
+
+
+
